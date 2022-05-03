@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+   </ion-buttons>
+    <ion-text id="title" >Detalle del día - Precio en Euro(EUR) y en Dolar(USD)</ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+      <img src="./assets/euro.png" alt="">
+    </ion-item>
+    <ion-item>
+      {{price_EUR}}
+    </ion-item>
+    <ion-item>
+      <img src="./assets/dolar.png" alt="">
+    </ion-item>
+    <ion-item>
+       {{price_USD}}
+    </ion-item>
+
+</ion-content>
+
+

@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-text id="title" >
+       Listado de precios en dolares(USD) del cierre del Bitcoin (2 ultimas semanas)
+    </ion-text>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row style="background:yellow">
+    <ion-col>
+      Fecha
+    </ion-col>
+    <ion-col>
+     Precio
+    </ion-col>
+   </ion-row>
+   <ion-list>
+        <ion-row  id="row" *ngFor="let item of listprices" [routerLink]="['/home',item.fecha]">
+          <ion-col text-center>
+             {{item.fecha}}
+          </ion-col>
+          <ion-col text-center>
+             {{item.price}} 
+          </ion-col>
+        </ion-row>
+    
+      <ion-row id="row" [routerLink]="['/home','02/05/2022']">
+       <ion-col>
+        {{timeActual}}
+       </ion-col>
+       <ion-col>
+        {{dolarDayActual}}
+       </ion-col>
+      </ion-row>
+   </ion-list>
+</ion-content>
+

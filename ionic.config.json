@@ -1,0 +1,7 @@
+{
+  "name": "bitcoin-tekus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
